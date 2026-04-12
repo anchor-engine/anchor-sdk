@@ -79,7 +79,20 @@ await guardedAgent.act({ type: 'file_write', target: '/src/main.ts', ... });
 
 Anchor is based on research into real-time intent enforcement. Our latest benchmark on the **CNN/DailyMail** corpus with `gemma4:31b-cloud` shows a **9.2% net increase** in high-fidelity grounding.
 
-Read the full technical report: [arXiv:2604.12345 (Placeholder)](https://arxiv.org/abs/2604.12345)
+Read the full technical report: [TECHNICAL_REPORT.md](./TECHNICAL_REPORT.md)
+
+## Citation
+
+If you use Anchor in your research or project, please cite:
+
+```bibtex
+@techreport{rahman2026anchor,
+  title={Anchor: Real-Time Intent Preservation in LLM Agents},
+  author={Rahman, Hasin},
+  year={2026},
+  url={https://github.com/anchor-engine/anchor-sdk}
+}
+```
 
 ---
 
