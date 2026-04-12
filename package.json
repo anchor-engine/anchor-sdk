@@ -1,0 +1,44 @@
+{
+  "name": "@anchor-engine/sdk",
+  "version": "0.1.0",
+  "description": "Anchor AI SDK - Intent preservation layer for LLM agents",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "anchor",
+    "ai",
+    "llm",
+    "agents",
+    "halucination",
+    "monitoring",
+    "safety"
+  ],
+  "author": "Anchor AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@langchain/core": "^0.2.0"
+  }
+}
