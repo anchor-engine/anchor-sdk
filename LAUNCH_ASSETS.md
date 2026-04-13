@@ -77,3 +77,34 @@ AI agents fail when they drift away from their original instructions. Anchor is 
 - **Integrate**: Works with LangChain, NeMo Guardrails, or any custom agent proxy.
 
 Stop hoping your agents follow instructions. Anchor them.
+
+---
+
+## 4. LinkedIn Post (Professional/Technical)
+
+**Headline**: We're open-sourcing Anchor: The Real-Time Intent Preservation Layer for AI Agents ⚓
+
+**Post Content**:
+The biggest hurdle to deploying LLM agents in production isn't intelligence—it's **reliability**. 
+
+During long-running or entity-dense tasks, agents experience "Intent Drift," where they cumulatively lose adherence to their original instructions. This leads to hallucinations that are difficult to catch until it's too late.
+
+Today, I'm excited to announce the v0.1.0 release of **Anchor**, an open-source inference-time monitoring engine that solves this problem.
+
+**The Anchor Approach**:
+Instead of relying on post-hoc evaluation, Anchor implements a "Wait-and-Rescue" loop. It scores every agent action against a high-fidelity grounding threshold (HHEM-2.1) and, if drift is detected, automatically triggers a Critique Loop to rewrite and correct the action.
+
+**The Numbers**:
+We benchmarked Anchor on the complex CNN/DailyMail news corpus using gemma4:31b.
+- **+9.2% Lift** in High-Fidelity Grounding.
+- **3:1 Successful Rescue Ratio** (interventions that improve grounding).
+- **0% Regression** in instruction-following (IFEval) or reasoning stability.
+
+Anchor is designed for developers, with a lightweight 3-line SDK (NPM) and native integrations for @LangChain and @NVIDIA NeMo Guardrails.
+
+Huge thanks to the community for the feedback during the Alpha phase. We’re officially moving to open development—check out the repository, read the technical report, and help us build a more grounded future for agentic AI.
+
+🚀 **GitHub**: https://github.com/anchor-engine/anchor-sdk
+📦 **NPM**: `npm install @anchor-engine/sdk`
+
+#AI #GenerativeAI #LLM #OpenSource #AIAgents #MachineLearning #TechLaunch
