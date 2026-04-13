@@ -1,0 +1,27 @@
+# Anchor Intent Preservation Rails
+# This file defines the Colang flows for using Anchor to detect and correct drift.
+
+define user ask about drift
+  "What is intent drift?"
+  "Did the model hallucinate?"
+  "Verify this summary"
+
+define flow check grounding with anchor
+  user ask about drift
+  $is_grounded = execute check_anchor_drift(threshold=0.96)
+  
+  if not $is_grounded
+    bot say "I've detected factual drift in my previous response. Let me correct that for you."
+    execute self_check_hallucination
+  else
+    bot say "The previous response is grounded in the provided source material."
+
+# Global output rail that triggers on every bot response
+define flow anchor output rail
+  bot has responded
+  $is_grounded = execute check_anchor_drift(threshold=0.95)
+  
+  if not $is_grounded
+    bot say "Wait, I notice some inaccuracies in my response. Correcting..."
+    # Optionally trigger a rewrite or block the output
+    stop
