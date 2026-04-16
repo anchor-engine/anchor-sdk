@@ -17,8 +17,7 @@ async def check_anchor_drift(
     """
     api_key = os.environ.get("ANCHOR_API_KEY")
     if not api_key:
-        # If no API key is set, we skip the check to avoid blocking the flow
-        return True
+        raise ValueError("Missing ANCHOR_API_KEY. Please sign up at https://anchor-app-one.vercel.app to get your free API key.")
 
     # Get the last bot message and the context/reference
     last_bot_message = context.get("last_bot_message")

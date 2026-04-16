@@ -23,6 +23,8 @@ Add Anchor to any AI agent project in just three lines of code.
 
 Sign up at **[anchor-app-one.vercel.app](https://anchor-app-one.vercel.app)** and generate your key from the **Settings** dashboard.
 
+*Note: The SDK is a cloud-first library and will securely communicate with the Anchor Engine via this API key. No local deployment is required.*
+
 ### 2. Install
 
 ```bash
@@ -49,6 +51,17 @@ if (!result.allow) {
   console.log(`Action blocked: ${result.intervention.message}`);
 }
 ```
+
+}
+```
+
+---
+
+## Why Anchor?
+
+Current LLM evaluation frameworks (like HHEM or IFEval) are generally applied *post-hoc*, assessing a system's quality long after a session has ended. 
+
+**Anchor** brings evaluation into the *execution loop*. We call this **Intent Preservation**. By scoring agent actions in real-time, Anchor actively prevents divergence (drift) from the user's original objective safely and transparently.
 
 ---
 
@@ -78,6 +91,26 @@ const guardedAgent = anchor.watch(myAgent, contract.id);
 // Automatically scores every .act(), .run(), or .execute() call
 await guardedAgent.act({ type: 'file_write', target: '/src/main.ts', ... });
 ```
+
+## Examples
+
+We provide robust examples containing copy-pasteable scripts for integrating Anchor into your existing workflows:
+- [Basic Usage (3 Lines of Code)](./examples/basic_usage.ts)
+- [LangChain Integration](./examples/langchain_callback.ts)
+- [NeMo Guardrails Integration](./examples/nemo_integration.py)
+
+---
+
+## Troubleshooting & FAQ
+
+**Q: I get `Missing ANCHOR_API_KEY` when initializing the SDK. What do I do?**
+A: Anchor requires a valid API key to communicate with the scoring engine. Sign up for free at [anchor-app-one.vercel.app](https://anchor-app-one.vercel.app), generate a key in Settings, and inject it securely via your environment variables: `export ANCHOR_API_KEY=your_key`.
+
+**Q: Does Anchor require me to run a local backend or database?**
+A: No! The open-source SDK communicates completely with our hosted cloud engine. There is zero local infrastructure required.
+
+**Q: Why was my action flagged with `Drift detected`?**
+A: Anchor acts strictly based on the `IntentContract` you defined. If the agent's action deviates from the original instruction or violates constraints, it is flagged. You can view detailed scoring telemetry for every action in your [Anchor Dashboard](https://anchor-app-one.vercel.app/app).
 
 ---
 
