@@ -15,6 +15,11 @@ export class Anchor {
   private apiKey: string;
 
   constructor(config: AnchorConfig) {
+    if (!config.apiKey || config.apiKey.trim() === '') {
+      throw new AnchorError(
+        'Missing ANCHOR_API_KEY. Please sign up at https://anchor-app-one.vercel.app to get your free API key.'
+      );
+    }
     this.apiKey = config.apiKey;
     this.baseUrl = config.baseUrl ?? 'https://anchor-app-one.vercel.app';
   }
