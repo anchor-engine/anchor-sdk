@@ -17,7 +17,11 @@
 
 Add Anchor to any AI agent project in just three lines of code.
 
-### 1. Install
+### 1. Get an API Key
+
+Sign up at [anchor-app-one.vercel.app](https://anchor-app-one.vercel.app) to get your free API key from the **Settings** dashboard.
+
+### 2. Install
 
 ```bash
 npm install @anchor-engine/sdk

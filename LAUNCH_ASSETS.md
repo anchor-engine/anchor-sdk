@@ -20,6 +20,7 @@ Works with LangChain, NeMo Guardrails, or any custom agent proxy. MIT license, z
 
 GitHub: https://github.com/anchor-engine/anchor-sdk
 NPM: `npm install @anchor-engine/sdk`
+Sign up: https://anchor-app-one.vercel.app/
 
 ---
 
@@ -42,6 +43,7 @@ The SDK is 3 lines of code, ships with native adapters for LangChain and NVIDIA 
 
 GitHub: https://github.com/anchor-engine/anchor-sdk
 NPM: `npm install @anchor-engine/sdk`
+Sign up: https://anchor-app-one.vercel.app/
 
 #OpenSource #AIAgents #LLM #GenerativeAI #MachineLearning
 
@@ -57,6 +59,8 @@ Multi-step AI agents drift. They start with clear instructions and gradually los
 Anchor is an open-source inference-time monitoring engine that fixes this. It scores every agent action against a persistent intent contract and automatically rewrites drifted actions via a critique loop before they execute.
 
 Benchmarked on CNN/DailyMail with Gemma 4 31B: +9.2% faithfulness lift, 3:1 rescue ratio, 0% regression on instruction following. MIT license, works with LangChain and NeMo Guardrails.
+
+Get your free API key at: https://anchor-app-one.vercel.app/
 
 ---
 
