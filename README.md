@@ -1,7 +1,7 @@
 # @anchor-engine/sdk
 
 [![npm version](https://img.shields.io/npm/v/@anchor-engine/sdk.svg?style=flat-square)](https://www.npmjs.com/package/@anchor-engine/sdk)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/anchor-ai/sdk/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/anchor-engine/anchor-sdk/blob/main/LICENSE)
 
 **Anchor** is an open-source intent preservation layer for LLM agents. It monitors agent actions in real-time, detecting and correcting "intent drift" before it leads to hallucinations or out-of-bounds behavior.
 
@@ -102,4 +102,4 @@ If you use Anchor in your research or project, please cite:
 
 ## License
 
-MIT © [Anchor AI](https://github.com/anchor-ai)
+MIT © [anchor-engine](https://github.com/anchor-engine)

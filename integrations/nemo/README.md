@@ -1,6 +1,6 @@
-# NeMo Guardrails Integration: Anchor AI
+# NeMo Guardrails Integration: anchor-engine
 
-This directory contains the necessary files to integrate the **Anchor AI Intent Preservation Layer** into [NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails).
+This directory contains the necessary files to integrate the **anchor-engine Intent Preservation Layer** into [NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails).
 
 ## Integration Overview
 

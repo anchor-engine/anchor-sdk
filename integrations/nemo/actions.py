@@ -9,7 +9,7 @@ async def check_anchor_drift(
     threshold: float = 0.95
 ):
     """
-    Checks the last bot message for intent drift using the Anchor AI API.
+    Checks the last bot message for intent drift using the anchor-engine API.
     
     Args:
         context: The current conversation context, containing the bot message and ground truth.

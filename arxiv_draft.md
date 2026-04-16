@@ -1,8 +1,8 @@
 # Anchor: A Real-Time Intent Preservation Layer for Agentic LLM Hallucination Reduction
 
-**Authors**: Hasin Rahman (Anchor AI), [Contributor Name]
+**Authors**: Hasin Rahman (anchor-engine), [Contributor Name]
 **Date**: April 2026
-**Status**: DRAFT (v0.1.0)
+**Status**: DRAFT (v0.1.1)
 
 ## Abstract
 Large Language Model (LLM) agents often suffer from "intent drift"—a cumulative loss of instructional grounding during long-running or entity-dense tasks. We present **Anchor**, an open-source inference-time monitoring engine that enforces developer intent through a high-fidelity grounding threshold. Benchmarked on the CNN/DailyMail news corpus using a Gemma 4 31B backbone, Anchor demonstrates a **9.2% increase in high-fidelity grounding** (HHEM >= 0.95) with zero regression in general instruction-following (IFEval) or sequential stability (Tau2). Anchor provides a lightweight, framework-agnostic middleware for safety-critical agent deployments.

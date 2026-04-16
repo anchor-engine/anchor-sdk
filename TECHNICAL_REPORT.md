@@ -60,7 +60,7 @@ Anchor provides a necessary guardrail for the next generation of autonomous agen
 @techreport{rahman2026anchor,
   title={Anchor: Real-Time Intent Preservation in LLM Agents},
   author={Rahman, Hasin},
-  institution={Anchor AI / Independent Research},
+  institution={anchor-engine / Independent Research},
   year={2026},
   url={https://github.com/anchor-engine/anchor-sdk}
 }

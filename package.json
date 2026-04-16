@@ -1,7 +1,7 @@
 {
   "name": "@anchor-engine/sdk",
-  "version": "0.1.0",
-  "description": "Anchor AI SDK - Intent preservation layer for LLM agents",
+  "version": "0.1.1",
+  "description": "anchor-engine SDK - Intent preservation layer for LLM agents",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
@@ -34,7 +34,7 @@
     "monitoring",
     "safety"
   ],
-  "author": "Anchor AI Team",
+  "author": "anchor-engine",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.0.0",

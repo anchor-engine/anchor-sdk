@@ -1,4 +1,4 @@
-# Anchor AI Launch Assets
+# anchor-engine Launch Assets
 
 These assets are designed to maximize developer engagement and drive GitHub stars for the `@anchor-engine/sdk` launch.
 
