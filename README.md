@@ -10,6 +10,8 @@
 > - **+9.2% High-Fidelity Lift**: Significantly improves the grounding of agent-generated summaries.
 > - **0% IFEval Regression**: Zero impact on instruction-following capabilities.
 > - **0% Tau2 Regression**: Maintains absolute stability in sequential reasoning.
+>
+> **Get Started**: Sign up at **[anchor-app-one.vercel.app](https://anchor-app-one.vercel.app)** to get your free API key.
 
 ---
 
@@ -17,9 +19,9 @@
 
 Add Anchor to any AI agent project in just three lines of code.
 
-### 1. Get an API Key
+### 1. Register & Get API Key
 
-Sign up at [anchor-app-one.vercel.app](https://anchor-app-one.vercel.app) to get your free API key from the **Settings** dashboard.
+Sign up at **[anchor-app-one.vercel.app](https://anchor-app-one.vercel.app)** and generate your key from the **Settings** dashboard.
 
 ### 2. Install
 
